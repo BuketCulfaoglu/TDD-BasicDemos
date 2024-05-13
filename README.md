@@ -1,2 +1,2 @@
-# TDD-BasicCalculator
-A Basic Calculator Project Using Test Driven Development Approach - CSharp
+# TDD-BasicDemos
+Basic Demo Projects Using Test Driven Development Approach - CSharp
