@@ -7,13 +7,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BasicCalculator", "BasicCal
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorTests", "BasicCalculator\CalculatorTests\CalculatorTests.csproj", "{A88009CD-0D8B-448B-BA61-24E6AFC1B6B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "BasicCalculator\Calculator\Calculator.csproj", "{E2D395BE-3D8C-4EDA-A394-D8FFD4B1516D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator", "BasicCalculator\Calculator\Calculator.csproj", "{E2D395BE-3D8C-4EDA-A394-D8FFD4B1516D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fibonacci", "Fibonacci", "{E362DB64-3705-463D-A812-AAEBD715BB94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciTests", "FibonacciTests\FibonacciTests.csproj", "{B82AE7D6-6898-4C9D-AD75-8D6697ED9240}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FibonacciTests", "FibonacciTests\FibonacciTests.csproj", "{B82AE7D6-6898-4C9D-AD75-8D6697ED9240}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci", "Fibonacci\Fibonacci.csproj", "{321951E1-16EA-46A6-A2FB-8AB4E8BAC8E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fibonacci", "Fibonacci\Fibonacci.csproj", "{321951E1-16EA-46A6-A2FB-8AB4E8BAC8E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FizzBuzz", "FizzBuzz", "{E6EB06A8-BE4A-4260-A185-472ACAC34F96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzzTests", "FizzBuzz\FizzBuzzTests\FizzBuzzTests.csproj", "{9C9A0B4A-A0CE-424E-9BE6-7111D4EDB841}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +41,10 @@ Global
 		{321951E1-16EA-46A6-A2FB-8AB4E8BAC8E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{321951E1-16EA-46A6-A2FB-8AB4E8BAC8E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{321951E1-16EA-46A6-A2FB-8AB4E8BAC8E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C9A0B4A-A0CE-424E-9BE6-7111D4EDB841}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C9A0B4A-A0CE-424E-9BE6-7111D4EDB841}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C9A0B4A-A0CE-424E-9BE6-7111D4EDB841}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C9A0B4A-A0CE-424E-9BE6-7111D4EDB841}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +54,7 @@ Global
 		{E2D395BE-3D8C-4EDA-A394-D8FFD4B1516D} = {68EC6F50-9AB7-47AF-BF13-7668CE603C9B}
 		{B82AE7D6-6898-4C9D-AD75-8D6697ED9240} = {E362DB64-3705-463D-A812-AAEBD715BB94}
 		{321951E1-16EA-46A6-A2FB-8AB4E8BAC8E9} = {E362DB64-3705-463D-A812-AAEBD715BB94}
+		{9C9A0B4A-A0CE-424E-9BE6-7111D4EDB841} = {E6EB06A8-BE4A-4260-A185-472ACAC34F96}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2999B5B2-E591-4F45-A653-5D6FF751CAC9}
