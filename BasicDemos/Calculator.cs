@@ -1,8 +1,8 @@
-﻿namespace Calculator
+﻿namespace BasicDemos
 {
-    public class BasicCalculator
+    public class Calculator
     {
-        public BasicCalculator()
+        public Calculator()
         {
         }
 
