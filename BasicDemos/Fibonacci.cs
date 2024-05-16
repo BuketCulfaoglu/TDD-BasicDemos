@@ -1,6 +1,6 @@
-﻿namespace Fibonacci
+﻿namespace BasicDemos
 {
-    public static class FibonacciNumbers
+    public static class Fibonacci
     {
         public static int GetFibonacci(int index)
         {

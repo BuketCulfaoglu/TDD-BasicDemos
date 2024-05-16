@@ -1,14 +1,13 @@
-using Calculator;
-
-namespace CalculatorTests
+namespace BasicDemos.Tests
 {
+    [TestFixture]
     public class CalculatorTests
     {
 
         [Test]
         public void Add_WhenCalled_ReturnsSum()
         {
-            var calculator = new BasicCalculator();
+            var calculator = new Calculator();
 
             int result = calculator.Add(3, 4);
 
@@ -18,7 +17,7 @@ namespace CalculatorTests
         [Test]
         public void Subtract_WhenCalled_ReturnsDifference()
         {
-            var calculator = new BasicCalculator();
+            var calculator = new Calculator();
 
             int result = calculator.Subtract(7, 4);
 
@@ -29,7 +28,7 @@ namespace CalculatorTests
         [Test]
         public void Multiply_WhenCalled_ReturnsProduct()
         {
-            var calculator = new BasicCalculator();
+            var calculator = new Calculator();
 
             int result = calculator.Multiply(3, 4);
 
@@ -40,7 +39,7 @@ namespace CalculatorTests
         [Test]
         public void Divide_WhenCalled_ReturnsQuotient()
         {
-            var calculator = new BasicCalculator();
+            var calculator = new Calculator();
 
             int result = calculator.Divide(12, 3);
 
@@ -50,7 +49,7 @@ namespace CalculatorTests
         [Test]
         public void Divide_ByZero_ThrowsArgumentException()
         {
-            var calculator = new BasicCalculator();
+            var calculator = new Calculator();
 
             Assert.Throws<ArgumentException>(() => calculator.Divide(10, 0));
         }
