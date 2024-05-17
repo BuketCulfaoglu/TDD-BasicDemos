@@ -1,10 +1,7 @@
 ﻿namespace BasicDemos
 {
-    public class Calculator
+    public class Calculator:IDisposable
     {
-        public Calculator()
-        {
-        }
 
         public int Add(int a, int b)
         {
@@ -26,6 +23,10 @@
         public int Subtract(int a, int b)
         {
             return a - b;
+        }
+
+        public void Dispose()
+        {
         }
     }
 }

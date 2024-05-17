@@ -75,7 +75,16 @@ namespace BasicDemos
             set
             {
                 _name = value;
-                OnPropertyChanged("Name");
+                OnPropertyChanged(nameof(Name));
+            }
+        }
+
+        public void ChangeWear(int newWear)
+        {
+            if (Wear < newWear)
+            {
+                Wear = newWear;
+                OnPropertyChanged(nameof(Wear));
             }
         }
 
