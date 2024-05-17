@@ -13,12 +13,12 @@ namespace BasicDemos
     {
         private string _name;
         public CharacterType CharacterType { get; }
-        public List<string> Weapon { get; }
+        public List<string> Weaponry { get; }
 
         public Character(CharacterType characterType)
         {
             CharacterType = characterType;
-            Weapon = new List<string>();
+            Weaponry = new List<string>();
         }
 
         public Character(CharacterType characterType, string name) : this(characterType)
