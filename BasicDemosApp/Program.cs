@@ -8,6 +8,11 @@ public class Program
     private static Game g = new Game();
     static void Main(string[] args)
     {
+        PlayTicTacToe();
+    }
+
+    private static void PlayTicTacToe()
+    {
         Console.WriteLine(GetPrintableState());
 
         while (g.GetWinner() == Winner.GameIsUnfinished)
