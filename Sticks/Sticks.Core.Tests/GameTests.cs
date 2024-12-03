@@ -61,7 +61,15 @@ namespace Sticks.Core.Tests
             var gen = new PredictableGenerator();
             gen.SetNumber(takes);
 
-            var sut = new Game(Player.Machine, 10);
+            int taken = 0;
+            var sut = new Game(Player.Machine, 10, gen);
+            sut.MachineMoved += (s, args) => taken = args.Taken;
+
+            sut = sut.MachineMakesMove();
+
+            Assert.That(sut.NumberOfSticks, Is.EqualTo(remains));
+            Assert.That(takes, Is.EqualTo(taken));
+            Assert.That(sut.Turn, Is.EqualTo(Player.Human));
         }
     }
 }
