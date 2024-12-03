@@ -51,5 +51,17 @@ namespace Sticks.Core.Tests
             Assert.That(sut.NumberOfSticks, Is.EqualTo(remains));
             Assert.That(sut.Turn, Is.EqualTo(Player.Machine));
         }
+
+        [Test]
+        [TestCase(1, 9)]
+        [TestCase(2, 8)]
+        [TestCase(3, 7)]
+        public void MachineMakesMove_CorrectGameState(int takes, int remains)
+        {
+            var gen = new PredictableGenerator();
+            gen.SetNumber(takes);
+
+            var sut = new Game(Player.Machine, 10);
+        }
     }
 }
