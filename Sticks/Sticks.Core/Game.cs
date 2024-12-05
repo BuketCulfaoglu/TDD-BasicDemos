@@ -12,20 +12,22 @@ public class Game
 {
     private readonly ICanGenerateNumbers _generator;
     public const int MinToTake = 1;
-
     public const int MaxToTake = 3;
 
     public int NumberOfSticks { get; }
     public Player Turn { get; }
 
-    public Game(Player turn, int numberOfSticks)
+    public Game(Player turn, int numberOfSticks) : this(turn, numberOfSticks, new NumbersGenerator())
     {
-        NumberOfSticks = numberOfSticks;
-        Turn = turn;
     }
 
     public Game(Player turn, int numberOfSticks, ICanGenerateNumbers generator)
     {
+        if (generator == null)
+            throw new ArgumentNullException(nameof(generator));
+        if (numberOfSticks < 10)
+            throw new ArgumentException($"$Number of sticks has to be >= 10. You passed:{numberOfSticks}");
+
         NumberOfSticks = numberOfSticks;
         Turn = turn;
         _generator = generator;
@@ -50,7 +52,7 @@ public class Game
             throw new ArgumentException($"You should take from one to three sticks. You took : {sticksTaken}");
         }
 
-        return new Game(Revert(Turn), NumberOfSticks - sticksTaken);
+        return new Game(Revert(Turn), NumberOfSticks - sticksTaken, _generator, MachineMoved);
     }
 
     public Game MachineMakesMove()
@@ -81,6 +83,4 @@ public class Game
             Remains = remains;
         }
     }
-
-
 }
