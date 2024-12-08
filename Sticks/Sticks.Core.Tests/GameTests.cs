@@ -71,5 +71,11 @@ namespace Sticks.Core.Tests
             Assert.That(takes, Is.EqualTo(taken));
             Assert.That(sut.Turn, Is.EqualTo(Player.Human));
         }
+
+        [Test]
+        public void Ctor_NullGenerator_Throws()
+        {
+            Assert.Throws<ArgumentNullException>(() => new Game(Player.Machine, 10, null));
+        }
     }
 }
