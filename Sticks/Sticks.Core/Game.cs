@@ -41,6 +41,8 @@ public class Game
         MachineMoved = onMachineMoved;
     }
 
+
+
     public Game HumanMakesMove(int sticksTaken)
     {
         if (Turn == Player.Machine)
@@ -82,5 +84,10 @@ public class Game
             Taken = taken;
             Remains = remains;
         }
+    }
+
+    public bool IsGameOver()
+    {
+        return NumberOfSticks <= 0;
     }
 }

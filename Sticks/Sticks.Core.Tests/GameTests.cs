@@ -73,6 +73,33 @@ namespace Sticks.Core.Tests
         }
 
         [Test]
+        [TestCase(1, false)]
+        [TestCase(2, true)]
+        public void IsGameOver_SomeSticks_ReturnsCorrectResults(int takeWhenTwoSticksInGame, bool isOver)
+        {
+            var sut = ReduceTo2SticksStartingWithHuman();
+            sut = sut.HumanMakesMove(takeWhenTwoSticksInGame);
+
+            bool result = sut.IsGameOver();
+
+            Assert.That(result, Is.EqualTo(isOver));
+        }
+
+        private static Game ReduceTo2SticksStartingWithHuman()
+        {
+            var gen = new PredictableGenerator();
+            gen.SetNumber(Game.MinToTake);
+
+            var sut = new Game(Player.Human, 10, gen);
+            sut = sut.HumanMakesMove(Game.MaxToTake);   //7
+            sut = sut.MachineMakesMove();               //6
+            sut = sut.HumanMakesMove(Game.MaxToTake);   //3
+            sut = sut.MachineMakesMove();               //2
+
+            return sut;
+        }
+
+        [Test]
         public void Ctor_NullGenerator_Throws()
         {
             Assert.Throws<ArgumentNullException>(() => new Game(Player.Machine, 10, null));
