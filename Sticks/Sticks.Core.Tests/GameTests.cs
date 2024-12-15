@@ -100,6 +100,13 @@ namespace Sticks.Core.Tests
         }
 
         [Test]
+        public void HumanMakesMove_TakeStickMoreThanInThe_Throws()
+        {
+            Game sut = ReduceTo2SticksStartingWithHuman();
+            Assert.Throws<ArgumentException>(() => sut.HumanMakesMove(Game.MaxToTake));
+        }
+
+        [Test]
         public void Ctor_NullGenerator_Throws()
         {
             Assert.Throws<ArgumentNullException>(() => new Game(Player.Machine, 10, null));
