@@ -53,6 +53,10 @@ public class Game
         {
             throw new ArgumentException($"You should take from one to three sticks. You took : {sticksTaken}");
         }
+        if(sticksTaken > NumberOfSticks)
+        {
+            throw new ArgumentException($"You took too many sticks.");
+        }
 
         return new Game(Revert(Turn), NumberOfSticks - sticksTaken, _generator, MachineMoved);
     }
