@@ -1,44 +1,27 @@
-# TDD Basic Demos
+# TDD-BasicDemos - Test-Driven Development Examples
 
-![TDD Cycle](https://miro.medium.com/max/1400/1*UY-8FHSpVYfNkrGbQrtkXg.png)
+This repository contains basic **Test-Driven Development (TDD)** examples in different programming languages. It serves as a learning resource for understanding TDD principles through simple, practical implementations.
 
-A collection of basic Test-Driven Development (TDD) demonstrations in C#.
+## 📌 What is TDD?
 
-## Table of Contents
-- [Overview](#overview)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Demo Projects](#demo-projects)
-- [Running Tests](#running-tests)
-- [TDD Workflow](#tdd-workflow)
-- [Contributing](#contributing)
-- [License](#license)
+**Test-Driven Development (TDD)** is a software development approach where tests are written before the actual implementation code. The cycle follows:
 
-## Overview
+1. **Red** → Write a failing test
+2. **Green** → Write minimal code to pass the test
+3. **Refactor** → Improve code while keeping tests passing
 
-This repository contains simple implementations demonstrating Test-Driven Development principles. Each demo follows the classic TDD cycle:
+## 🛠 Technologies & Languages Used
 
-1. **Red** - Write a failing test
-2. **Green** - Make the test pass
-3. **Refactor** - Improve the code
-4. **Repeat**
+- **JavaScript** (Jest)
+- **Python** (pytest)
+- **Java** (JUnit)
+- **C#** (xUnit/NUnit)
+- **Ruby** (RSpec)
 
-## Prerequisites
+## 🚀 Getting Started
 
-- [.NET 6.0 SDK](https://dotnet.microsoft.com/download)
-- IDE or code editor (Visual Studio, VS Code, Rider, etc.)
-- Git
-
-## Installation
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/BuketCulfaoglu/TDD-BasicDemos.git
-cd TDD-BasicDemos/BasicDemos
-dotnet restore
-
-
-
-Each project in this repository illustrates a specific problem or scenario solved using TDD.
-
-## License
-This project is licensed under the MIT License.
+cd TDD-BasicDemos
