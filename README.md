@@ -25,3 +25,9 @@ This repository contains basic **Test-Driven Development (TDD)** examples in dif
 ```bash
 git clone https://github.com/BuketCulfaoglu/TDD-BasicDemos.git
 cd TDD-BasicDemos
+```
+
+### 2. Navigate to a Language Folder
+```bash
+cd javascript  # or python, java, csharp, ruby
+```
