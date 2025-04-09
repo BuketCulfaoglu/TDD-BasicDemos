@@ -20,14 +20,13 @@ This repository contains basic **Test-Driven Development (TDD)** examples in dif
 
 ## 🚀 Getting Started
 
-### 1. Clone the Repository
+### Prerequisites
+- [.NET 6.0 SDK](https://dotnet.microsoft.com/download) or later
+- Your favorite IDE (Visual Studio, VS Code, Rider)
+- Git
 
+### Installation
 ```bash
 git clone https://github.com/BuketCulfaoglu/TDD-BasicDemos.git
 cd TDD-BasicDemos
-```
-
-### 2. Navigate to a Language Folder
-```bash
-cd javascript  # or python, java, csharp, ruby
-```
+dotnet restore
