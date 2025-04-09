@@ -30,3 +30,13 @@ This repository contains basic **Test-Driven Development (TDD)** examples in dif
 git clone https://github.com/BuketCulfaoglu/TDD-BasicDemos.git
 cd TDD-BasicDemos
 dotnet restore
+```
+
+## 📚 Demo Projects
+
+
+| Demo        | Description                          | Key Concepts Demonstrated |
+|-------------|--------------------------------------|---------------------------|
+| Calculator  | Basic arithmetic operations          | Simple TDD workflow       |
+| StringUtils | String manipulation methods          | Edge case testing         |
+| FizzBuzz    | Classic FizzBuzz problem             | Refactoring techniques    |
