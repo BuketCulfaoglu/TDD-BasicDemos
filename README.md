@@ -42,3 +42,20 @@ dotnet restore
 | FizzBuzz    | Classic FizzBuzz problem             | Refactoring techniques    |
 | Fibonacci   | Classic Fibonacci problem            | Refactoring techniques    |
 | Roman       | Roman Characters                     |                           |
+
+
+
+
+
+
+## 🤝 How to Contribute  
+- 🔧 **Fix bugs:** Open an issue or submit a PR.  
+- 💡 **Add examples:** New TDD demos (e.g., C#, Go) are welcome!  
+- 📖 **Improve docs:** Update README or add comments to code.  
+
+**Steps:**  
+1. Fork the repo.  
+2. Create a branch (`git checkout -b feature/your-feature`).  
+3. Commit changes (`git commit -m 'Add xyz'`).  
+4. Push to the branch (`git push origin feature/your-feature`).  
+5. Open a Pull Request.  
