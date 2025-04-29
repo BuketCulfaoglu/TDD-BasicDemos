@@ -40,7 +40,7 @@ dotnet restore
 | Calculator  | Basic arithmetic operations          | Simple TDD workflow       |
 | StringUtils | String manipulation methods          | Edge case testing         |
 | FizzBuzz    | Classic FizzBuzz problem             | Refactoring techniques    |
-| Fibonacci   | Classic Fibonacci problem            | Refactoring techniques    |
+| Fibonacci   | Classic Fibonacci problem            |                           |
 | Roman       | Roman Characters                     |                           |
 
 
