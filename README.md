@@ -14,7 +14,6 @@ This repository contains basic **Test-Driven Development (TDD)** examples in dif
 
 - **JavaScript** (Jest)
 - **Python** (pytest)
-- **Java** (JUnit)
 - **C#** (xUnit/NUnit)
 - **Ruby** (RSpec)
 
